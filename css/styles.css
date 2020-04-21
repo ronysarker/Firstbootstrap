@@ -14,15 +14,6 @@ header h2 {
     color: #CEC8FF;
 }
 
-.card {
-    padding: 2px;
-    transition: transform .2s;
-    margin: 0 auto;
-  }
-  
-  .card:hover {
-    transform: scale(1.2);
-  }
 
 .site-footer {
     background-image: linear-gradient(#CEC8FF, white);
