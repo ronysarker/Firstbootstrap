@@ -30,8 +30,8 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2 float-right align-self-center">
-                    <a data-target="#reserveModal" class="btn btn-primary btn-lg bg-info mt-4 mt-sm-0"
-                        data-toggle="modal" role="button"><i class="fa fa-ticket fa-lg" aria-hidden=“true”></i> Reserve
+                    <a id="reserveButton" class="btn btn-primary btn-lg bg-info mt-4 mt-sm-0" role="button"><i
+                            class="fa fa-ticket fa-lg" aria-hidden=“true”></i> Reserve
                         Campsite</a>
                 </div>
             </div>
@@ -121,12 +121,18 @@
                                 class="fa fa-sitemap fa-lg"></i>Careers</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                         <i class="fa fa-sign-in"></i> Login</a>
                 </span>
             </div>
         </div>
     </nav>
+
+
+
+
+
+
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
@@ -168,6 +174,10 @@
             </div>
         </div>
     </div>
+
+
+
+
 
 
     <div class="container">
@@ -229,7 +239,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
+                    <img id="Breadcrumb" class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
                         alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
@@ -256,7 +266,8 @@
                             shores of the pristine React
                             Lake is a favorite for fly fishers.</p>
                     </div>
-                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb Trail" />
+                    <img id="lake" class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg"
+                        alt="Breadcrumb Trail" />
                 </div>
             </div>
         </div>
@@ -267,12 +278,33 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail " src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
+                    <img id="logo" class="d-flex mr-3 img-thumbnail " src="img/bootstrap-thumb.png"
+                        alt="Bootstrap Outfitters">
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
                         <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices
                             you
                             can't beat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imgmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Images</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <img id="imge" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -313,7 +345,7 @@
         </div>
     </footer>
 
-   <!-- build:js js/main.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
